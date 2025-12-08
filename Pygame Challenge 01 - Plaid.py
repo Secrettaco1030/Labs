@@ -1,34 +1,38 @@
-# -----------------------------------------------------------------------------
-# COLOUR LAB - PLAID
-# 
-# Use your new knowledge of drawing and colours with Pygame to make this a full screen of a plaid pattern.
-# 
-# Lab Requirements:
-# LEVEL 3
-# The plaid must have 2 different colours
-# LEVEL 4
-# Everything listed in level 3 
-# The plaid has 2 different strokeWeights
-# LEVEL 4+
-# Everything listed in level 4
-# The plaid uses alpha colour
-# 
-# Recommended Lessons:
-# Github
-# Thonny
-# Pygame Intro
-# Pygame Window
-# Pygame Game Loop
-# Pygame Drawing
-# Pygame Colours
-# 
-# Challenge Difficulty:**
-# 
-# Remember the purpose of this challenge is to help you practice Pygame coding not to find code online or copy from your friends! This challenge will be checked for Plagiarism.
-# 
-# Upload your code to github when finished
-# 
-# Good luck!
-#-----------------------------------------------------------------------------
+import pygame
+
+pygame.init()
+
+stripe1=(255,238,169)
+#light yellow
+stripe2=((255,190,120))
+#light orange
+stripe3=(255,125,41)
+#orange
+stripe4=(37,57,0)
+#brown
+width=600
+height=400
+screen = pygame.display.set_mode((600, 400))
+pygame.display.set_caption("Pygame Test Window")
+stripe_width=45
+gap=80
+
+screen.fill(stripe4)
+
+for x in range(0, width, gap):
+    pygame.draw.rect(screen, stripe2, (x,0, stripe_width, height))
+
+
+
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    screen.blit(screen, (0, 0))
+    pygame.display.update()
+pygame.quit()
+
 
 
