@@ -18,6 +18,7 @@ pygame.display.update()
 car4=pygame.image.load("/Users/ronnie/Documents/GitHub/Labs/images/car4.png")
 car4 = pygame.transform.scale(car4, (330, 340))
 screen.blit(car4, (-20, 230))
+
 sun_x=random.randrange(40,650)
 sun1=pygame.image.load("/Users/ronnie/Documents/GitHub/Labs/images/sun2.png")
 sun1 = pygame.transform.scale(sun1, (150, 150))
