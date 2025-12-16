@@ -3,7 +3,7 @@ import random
 pygame.init()
 
 screen = pygame.display.set_mode((800, 600))
-background = pygame.image.load('/Users/ronnie/Documents/GitHub/Labs/images/park.jpg')
+background = pygame.image.load('images/park.jpg')
 background = pygame.transform.scale(background, (800, 600))
 screen.blit(background, (0, 0))
 pygame.display.update()
