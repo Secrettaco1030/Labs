@@ -2,19 +2,18 @@ import pygame
 from pygame.examples.chimp import load_image
 
 pygame.init()
-Screen_width = 800
-Screen_height = 600
+Screen_width = 1200
+Screen_height = 700
 clock=pygame.time.Clock()
 screen=pygame.display.set_mode((Screen_width, Screen_height))
-layer1 = pygame.image.load("/Users/ronnie/Documents/GitHub/Labs/Images for Layering/sky.png")
+layer1 = pygame.image.load("Images for Layering/sky.png")
 layer1=pygame.transform.scale(layer1, (Screen_width, Screen_height))
-layer2=pygame.image.load("/Users/ronnie/Documents/GitHub/Labs/Images for Layering/clouds.png")
+layer2=pygame.image.load("Images for Layering/clouds.png")
 layer2=pygame.transform.scale(layer2, (Screen_width, Screen_height))
 
-layer3=pygame.image.load("/Users/ronnie/Documents/GitHub/Labs/Images for Layering/far-mountains.png")
+layer3=pygame.image.load("Images for Layering/far-mountains.png")
 layer3=pygame.transform.scale(layer3, (Screen_width, Screen_height))
-
-layer4=pygame.image.load("/Users/ronnie/Documents/GitHub/Labs/Images for Layering/canyon.png")
+layer4=pygame.image.load("Images for Layering/canyon.png")
 layer4=pygame.transform.scale(layer4, (Screen_width, Screen_height))
 
 x1_1, x1_2=0, Screen_width

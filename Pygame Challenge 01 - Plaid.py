@@ -14,7 +14,6 @@ stripe5=(115,44,44)
 width=600
 height=400
 screen = pygame.display.set_mode((600, 400))
-pygame.display.set_caption("Pygame Test Window")
 stripe_width=45
 stripe_width2=10
 stripe_height=45
